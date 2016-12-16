@@ -21,38 +21,11 @@ message { font-family: Montserrat }
 
 <!--<link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />!-->
 
-<script type="text/javascript">
-
-function enter() {
-
-    if (navigator.mozGetUserMedia) { 
-       navigator.myGetMedia=navigator.mozGetUserMedia;
-       navigator.myGetMedia({video: true}, connect, error); 
-    } 
-    else {
-       alert("NO");
-    }
-
-    function connect(stream) {
-
-        var video = document.getElementById("streamInput");
-            video.src = window.URL ? window.URL.createObjectURL(stream) : stream;
-            video.play();
-
-        var canvas = document.getElementById("c"); 
-    }
-
-    function error(e) { console.log(e); }
-
-}
-
-</script>
-
 </head>
 <body>
 <div id="header_outer">
 <div id="logo_outer"><div id="logo_inner" class="row ">
-<a id="logo" href="/dashboard/sites/opum2"><img class="logo_img" src="/dashboard/sites/sulu_logo.png" /><siteName>opum2<siteName></a>
+<a id="logo" href="/opum2"><img class="logo_img" src="assets/sulu_logo.png" /><siteName>opum2<siteName></a>
 </div>
 </div>
 
